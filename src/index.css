@@ -126,9 +126,7 @@ textarea:focus {
   border-radius: 50%;
   border: 1px solid gainsboro;
 }
-.d{
-  color:#fa8aad
-}
+
 /*Dark mode*/
 .dark-mode {
   background-color: rgb(60, 59, 59);
