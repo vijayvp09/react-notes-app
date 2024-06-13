@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.wrapper{
+  position: relative;
+  background-color: rgb(225, 236, 241);
+  min-height: 100vh;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .dark-icon {
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.header .dark-icon:hover {
+  transform: scale(1.2);
+}
+.container {
+  background-color: rgb(225, 236, 241);
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.notes-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 300px));
+}
+.note {
+  background-color: #fd88a6;
+  padding: 1rem;
+  border-radius: 10px;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  box-shadow: 10px 10px 10px #babecc;
+
+}
+.note textarea{
+  border: none;
+  resize: none;
+  background-color: #fd88a6;
+}
+.delete-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.5s ease;
+}
+.delete-icon:hover {
+  transform: scale(1.2);
+  color:#58edac;
+}
+.note.new {
+  background-color: #67d79f;
+  max-width: 300px;
+}
+.note.new textarea {
+  resize: none;
+  border: none;
+  background-color: #67d79f;
+}
+textarea:focus {
+  outline: none;
+}
+.save {
+  border-radius: 15px;
+  border: none;
+  padding: 5px 10px 5px 10px;
+}
+.save:hover {
+  background-color: #e1e1e1;
+  cursor: pointer;
+}
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search {
+  display: flex;
+  align-items: center;
+  background-color: #f8fafb;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 2em;
+  box-shadow: 5px 5px 10px #c0bfbf;
+}
+.search > input {
+  border: none;
+  width: 90%;
+  background-color: #f8fafb;
+  padding: 5px;
+}
+.search > input:focus {
+  outline: none; 
+}
+.color{
+  width: 100%;
+  height: 21px;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.color .circle{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid gainsboro;
+}
+.d{
+  color:#fa8aad
+}
+/*Dark mode*/
+.dark-mode {
+  background-color: rgb(60, 59, 59);
+  min-height: 100vh;
+}
+.dark-mode h1{
+  color: white;
+}
+.dark-mode .note {
+  box-shadow: 10px 10px 10px #101010;
+}
+.dark-mode .search {
+  box-shadow: 5px 5px 10px #101010;
+}
+.dark-mode .sidebar {
+  box-shadow: 5px 5px 10px #101010;
+}
