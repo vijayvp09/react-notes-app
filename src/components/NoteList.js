@@ -5,7 +5,7 @@ import {noteContext} from "../context/NoteContext"
 
 const NoteList = () => {
     const {notes, searchTerm} = useContext(noteContext);
-    const filterdNotes = notes.filter((note)=>note.text.toLowerCase().includes(searchTerm.toLowerCase())) 
+    const filterdNotes = notes.filter((note)=>note.text.toLowerCase().includes(searchTerm.toLowerCase(  ))) 
     return(
         <div className="notes-list">
              {filterdNotes.map((note, index)=> {

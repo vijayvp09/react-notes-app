@@ -29,8 +29,8 @@ const Note = ({text, date, id, color}) => {
     <div className="note" onClick={handleDivClick}>
          {isEditable ? 
                 <textarea
-                rows="8"
-                cols="10"
+                    rows="8"
+                    cols="10"
                     type="text"
                     value={text}
                     onChange={handleInputChange}
